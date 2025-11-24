@@ -127,6 +127,16 @@ liveboard:
       dynamic_name: "County Name, Shipmode, Monthly date_ordered - Fiscal, Region, State Name, Total Budget, Total Income"
       dynamic_description: positoning left
     viz_guid: 4f3fc9cc-9fdc-4300-87ef-fd55aef10bef
+  filters:
+  - column:
+    - Shipmode
+    oper: in
+    values:
+    - fob
+    - air
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
   layout:
     tabs:
     - name: tab1
@@ -147,6 +157,9 @@ liveboard:
         height: 8
         width: 6
       id: 0c3f47eb-fde3-41e0-ab95-dc9c771c290d
+  ordered_chips:
+  - name: Shipmode
+    type: FILTER
   style:
     style_properties:
     - name: lb_border_type

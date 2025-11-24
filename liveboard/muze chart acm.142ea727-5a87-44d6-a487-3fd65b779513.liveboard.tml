@@ -1,0 +1,165 @@
+guid: 142ea727-5a87-44d6-a487-3fd65b779513
+liveboard:
+  name: muze chart acm
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "County Name, Shipmode, Monthly date_ordered - Fiscal, Total Budget"
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Budget] [County Name] [Shipmode] [date_ordered] [date_ordered].monthly"
+      answer_columns:
+      - name: County Name
+      - name: Month(date_ordered)
+      - name: Shipmode
+      - name: Total Budget
+      table:
+        table_columns:
+        - column_id: County Name
+          show_headline: false
+        - column_id: Month(date_ordered)
+          show_headline: false
+        - column_id: Shipmode
+          show_headline: false
+        - column_id: Total Budget
+          show_headline: false
+        ordered_column_ids:
+        - County Name
+        - Shipmode
+        - Month(date_ordered)
+        - Total Budget
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: MUZE_STUDIO
+        chart_columns:
+        - column_id: County Name
+        - column_id: Month(date_ordered)
+        - column_id: Shipmode
+        - column_id: Total Budget
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"County Name\",\"columnProperty\": {}},{\"columnId\": \"Total Budget\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Month(date_ordered)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ab522ae0-b6c2-49b9-83b5-557a6f040d9b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Budget\"],\"isOpposite\": false}},{\"id\": \"adcd929e-a049-4a19-bb2e-990b1baf8b70\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"County Name\",\"Shipmode\",\"Month(date_ordered)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Budget\",\"color\": \"#FCC838\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: fields
+            columns:
+            - County Name
+            - Shipmode
+            - Month(date_ordered)
+            - Total Budget
+            mode: COLUMN_DRIVEN
+        custom_visual_props: "{\"columnVisualProps\":{},\"axisVisualProps\":{},\"dataLabelVisualProps\":{},\"tooltipVisualProps\":{},\"legendVisualProps\":{},\"displayVisualProps\":{},\"clientState\":\"{\\\"version\\\":1,\\\"playground\\\":{\\\"version\\\":\\\"v1\\\",\\\"code\\\":{\\\"jsCodeBase64\\\":\\\"LyoqCiAqIEF2YWlsYWJsZSBDb2x1bW5zOgogKiAiQ291bnR5IE5hbWUiCiAqICJTaGlwbW9kZSIKICogIk1vbnRoKGRhdGVfb3JkZXJlZCkiCiAqICJUb3RhbCBCdWRnZXQiCiAqICJNZWFzdXJlIG5hbWVzIiAvLyBJZiAnbWVhc3VyZVZhbHVlcycgaXMgZW5hYmxlZC4KICogIk1lYXN1cmUgdmFsdWVzIiAvLyBJZiAnbWVhc3VyZVZhbHVlcycgaXMgZW5hYmxlZC4KICogLS0tIEVORCAtLS0gCiAqLwoKY29uc3QgeyBtdXplLCBnZXREYXRhRnJvbVNlYXJjaFF1ZXJ5IH0gPSB2aXo7Cgpjb25zdCBkYXRhID0gZ2V0RGF0YUZyb21TZWFyY2hRdWVyeSgpOwoKY29uc3QgQ29sdW1uRmllbGQgPSAiTW9udGgoZGF0ZV9vcmRlcmVkKSI7CmNvbnN0IFJvd0ZpZWxkID0gIlRvdGFsIEJ1ZGdldCI7CmNvbnN0IENvbG9yRmllbGQgPSAiU2hpcG1vZGUiOwptdXplCiAgICAuY2FudmFzKCkKICAgIC5yb3dzKFtSb3dGaWVsZF0pCiAgICAuY29sdW1ucyhbQ29sdW1uRmllbGRdKQogICAgLmNvbG9yKENvbG9yRmllbGQpCiAgICAubGF5ZXJzKFsKICAgICAgICB7CiAgICAgICAgICAgIG1hcms6ICJhcmVhIiwKICAgICAgICAgICAgdHJhbnNmb3JtOiB7CiAgICAgICAgICAgICAgICB0eXBlOiAic3RhY2siLAogICAgICAgICAgICB9LAogICAgICAgIH0sCiAgICBdKQogICAgLmRhdGEoZGF0YSkKICAgIC5tb3VudCgiI2NoYXJ0IikKICAgIC5jb25maWcoewogICAgICAgIGxlZ2VuZCA6IHsKICAgICAgICAgICAgcG9zaXRpb24gOiAnYm90dG9tJwogICAgICAgIH0KICAgIH0pCiAKCgoKCg==\\\",\\\"cssCodeBase64\\\":\\\"aHRtbCwgYm9keSB7CiAgICBtYXJnaW46IDA7CiAgICBwYWRkaW5nOiAwOwp9CgojY2hhcnQgewogICAgd2lkdGg6IDEwMHZ3OwogICAgaGVpZ2h0OiA1MHZoOwp9\\\",\\\"htmlCodeBase64\\\":\\\"PGRpdiBpZD0iY2hhcnQiPjwvZGl2Pg==\\\"},\\\"splitSizes\\\":[55,45]}}\"}"
+      display_mode: CHART_MODE
+    viz_guid: d1b06b14-a0c1-43bb-94b9-34811fa7f222
+  - id: Viz_2
+    answer:
+      name: "County Name, Shipmode, Monthly date_ordered - Fiscal, Region, State Name, Total Budget, Total Income"
+      description: positoning left
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Budget] [County Name] [Shipmode] [date_ordered] [date_ordered].monthly [Region] [State Name] [Income]"
+      answer_columns:
+      - name: County Name
+      - name: Month(date_ordered)
+      - name: Region
+      - name: Shipmode
+      - name: State Name
+      - name: Total Budget
+      - name: Total Income
+      table:
+        table_columns:
+        - column_id: County Name
+          show_headline: false
+        - column_id: Month(date_ordered)
+          show_headline: false
+        - column_id: Region
+          show_headline: false
+        - column_id: Shipmode
+          show_headline: false
+        - column_id: State Name
+          show_headline: false
+        - column_id: Total Budget
+          show_headline: false
+        - column_id: Total Income
+          show_headline: false
+        ordered_column_ids:
+        - County Name
+        - Shipmode
+        - Month(date_ordered)
+        - Region
+        - State Name
+        - Total Budget
+        - Total Income
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: MUZE_STUDIO
+        chart_columns:
+        - column_id: County Name
+        - column_id: Month(date_ordered)
+        - column_id: Region
+        - column_id: Shipmode
+        - column_id: State Name
+        - column_id: Total Budget
+        - column_id: Total Income
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"County Name\",\"columnProperty\": {}},{\"columnId\": \"Total Budget\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Shipmode\",\"columnProperty\": {}},{\"columnId\": \"State Name\",\"columnProperty\": {}},{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"Month(date_ordered)\",\"columnProperty\": {}},{\"columnId\": \"Total Income\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bd4adafc-324d-4998-b9d4-5c0e8879d271\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Income\"],\"isOpposite\": false}},{\"id\": \"eb62688c-f1e4-4ddb-b6a6-70d7eab4f611\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Budget\"],\"isOpposite\": true}},{\"id\": \"10e07d57-bcc0-4044-acff-ad3dbab18309\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"County Name\",\"Shipmode\",\"State Name\",\"Region\",\"Month(date_ordered)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Budget\",\"color\": \"#FCC838\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: fields
+            columns:
+            - County Name
+            - Shipmode
+            - State Name
+            - Region
+            - Month(date_ordered)
+            - Total Income
+            - Total Budget
+            mode: COLUMN_DRIVEN
+        custom_visual_props: "{\"columnVisualProps\":{},\"axisVisualProps\":{},\"dataLabelVisualProps\":{},\"tooltipVisualProps\":{},\"legendVisualProps\":{},\"displayVisualProps\":{},\"clientState\":\"{\\\"version\\\":1,\\\"playground\\\":{\\\"version\\\":\\\"v1\\\",\\\"code\\\":{\\\"jsCodeBase64\\\":\\\"LyoqCiAqIEF2YWlsYWJsZSBDb2x1bW5zOgogKiAiQ291bnR5IE5hbWUiCiAqICJTaGlwbW9kZSIKICogIlN0YXRlIE5hbWUiCiAqICJSZWdpb24iCiAqICJNb250aChkYXRlX29yZGVyZWQpIgogKiAiVG90YWwgSW5jb21lIgogKiAiVG90YWwgQnVkZ2V0IgogKiAiTWVhc3VyZSBuYW1lcyIgLy8gSWYgJ21lYXN1cmVWYWx1ZXMnIGlzIGVuYWJsZWQuCiAqICJNZWFzdXJlIHZhbHVlcyIgLy8gSWYgJ21lYXN1cmVWYWx1ZXMnIGlzIGVuYWJsZWQuCiAqIC0tLSBFTkQgLS0tIAogKi8KCmNvbnN0IHsgbXV6ZSwgZ2V0RGF0YUZyb21TZWFyY2hRdWVyeSB9ID0gdml6OwoKY29uc3QgZGF0YSA9IGdldERhdGFGcm9tU2VhcmNoUXVlcnkoKTsKCmNvbnN0IENvbHVtbkZpZWxkcyA9IFsiVG90YWwgSW5jb21lIiwgIlRvdGFsIEJ1ZGdldCJdOwpjb25zdCBSb3dGaWVsZHMgPSBbIlJlZ2lvbiIsICJTaGlwbW9kZSJdOwpjb25zdCBTdGVwRmllbGQgPSAiTW9udGgoZGF0ZV9vcmRlcmVkKSI7CgptdXplCiAgICAuY2FudmFzKCkKICAgIC5jb2x1bW5zKENvbHVtbkZpZWxkcykKICAgIC5yb3dzKFtSb3dGaWVsZHNdKQogICAgLmxheWVycyhbCiAgICAgICAgewogICAgICAgICAgICBtYXJrOiAiYmFyIiwKICAgICAgICAgICAgZW5jb2Rpbmc6IHsKICAgICAgICAgICAgICAgIGNvbG9yOiB7CiAgICAgICAgICAgICAgICAgICAgdmFsdWU6ICgpID0+IHsKICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuICIjOEREM0M3IjsKICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgfSwKICAgICAgICB9LAogICAgXSkKICAgIC5jb25maWcoewogICAgICAgIGdyaWRMaW5lczogewogICAgICAgICAgICB4OiB7CiAgICAgICAgICAgICAgICBzaG93OiBmYWxzZSwKICAgICAgICAgICAgfSwKICAgICAgICAgICAgeTogewogICAgICAgICAgICAgICAgc2hvdzogZmFsc2UsCiAgICAgICAgICAgIH0sCiAgICAgICAgfSwKICAgICAgICBheGVzOiB7CiAgICAgICAgICAgIHg6IHsKICAgICAgICAgICAgICAgIHRpY2tJbnRlcnZhbDogewogICAgICAgICAgICAgICAgICAgIHN0ZXA6IFN0ZXBGaWVsZCwKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgIH0sCiAgICAgICAgfSwKICAgICAgICB1bmlmb3JtQXhpc0RvbWFpbnM6IGZhbHNlLAogICAgfSkKICAgIC5kYXRhKGRhdGEpCiAgICAubW91bnQoIiNjaGFydCIpCgoKCgo=\\\",\\\"cssCodeBase64\\\":\\\"aHRtbCwgYm9keSB7CiAgICBtYXJnaW46IDA7CiAgICBwYWRkaW5nOiAwOwp9CgojY2hhcnQgewogICAgd2lkdGg6IDEwMHZ3OwogICAgaGVpZ2h0OiAxMDB2aDsKfQ==\\\",\\\"htmlCodeBase64\\\":\\\"PGRpdiBpZD0iY2hhcnQiPjwvZGl2Pg==\\\"},\\\"splitSizes\\\":[55,45]}}\"}"
+      display_mode: CHART_MODE
+      dynamic_name: "County Name, Shipmode, Monthly date_ordered - Fiscal, Region, State Name, Total Budget, Total Income"
+      dynamic_description: positoning left
+    viz_guid: 4f3fc9cc-9fdc-4300-87ef-fd55aef10bef
+  layout:
+    tabs:
+    - name: tab1
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      id: c2dd4f5e-6acb-4cb4-8a55-33f4603a25d5
+    - name: tab2
+      description: ""
+      tiles:
+      - visualization_id: Viz_2
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      id: 0c3f47eb-fde3-41e0-ab95-dc9c771c290d
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_A
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "false"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "false"
+    - name: kpi_hero_font_size
+      value: M

@@ -40,7 +40,7 @@ liveboard:
         - column_id: Shipmode
         - column_id: Total Budget
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"County Name\",\"columnProperty\": {}},{\"columnId\": \"Total Budget\",\"columnProperty\": {}},{\"columnId\": \"6287db2e-dec7-47d0-9bc1-687ed721adff\",\"columnProperty\": {}},{\"columnId\": \"4b2a042e-fd87-4468-8bf0-d58a064540e4\",\"columnProperty\": {}},{\"columnId\": \"Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Month(date_ordered)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ab522ae0-b6c2-49b9-83b5-557a6f040d9b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Budget\"],\"isOpposite\": false}},{\"id\": \"adcd929e-a049-4a19-bb2e-990b1baf8b70\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"County Name\",\"Shipmode\",\"Month(date_ordered)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Budget\",\"color\": \"#FCC838\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"County Name\",\"columnProperty\": {}},{\"columnId\": \"Total Budget\",\"columnProperty\": {}},{\"columnId\": \"3ec81cbd-b8d7-454f-ab5f-e2fcb0621340\",\"columnProperty\": {}},{\"columnId\": \"96798527-edb5-4e71-820b-c5e28312f463\",\"columnProperty\": {}},{\"columnId\": \"Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Month(date_ordered)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ab522ae0-b6c2-49b9-83b5-557a6f040d9b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Budget\"],\"isOpposite\": false}},{\"id\": \"adcd929e-a049-4a19-bb2e-990b1baf8b70\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"County Name\",\"Shipmode\",\"Month(date_ordered)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Budget\",\"color\": \"#FCC838\"}]}"
         custom_chart_config:
         - key: basic
           dimensions:
@@ -127,6 +127,16 @@ liveboard:
       dynamic_name: "County Name, Shipmode, Monthly date_ordered - Fiscal, Region, State Name, Total Budget, Total Income"
       dynamic_description: positoning left
     viz_guid: 4f3fc9cc-9fdc-4300-87ef-fd55aef10bef
+  filters:
+  - column:
+    - Shipmode
+    oper: in
+    values:
+    - fob
+    - air
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
   layout:
     tabs:
     - name: tab1
@@ -147,6 +157,9 @@ liveboard:
         height: 8
         width: 6
       id: 0c3f47eb-fde3-41e0-ab95-dc9c771c290d
+  ordered_chips:
+  - name: Shipmode
+    type: FILTER
   style:
     style_properties:
     - name: lb_border_type
